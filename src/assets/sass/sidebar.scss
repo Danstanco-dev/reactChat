@@ -1,0 +1,146 @@
+@media screen and (max-width: 820px){
+     .sidebar{
+          width: 300px;
+     }
+}
+
+@media screen and (max-width: 580px){
+     .sidebar{
+          width: 100px;
+     }
+}
+
+.sidebar{
+     width: 350px;
+     min-height: 100vh;
+     background-color: rgb(26, 26, 233);
+     color: wheat;
+
+     .wrapper{
+          display: flex;
+          flex-direction: column;
+
+          .top{
+               height: 70px;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               border-bottom: 2px solid wheat;
+               padding: 1rem;
+               .heading{
+                    font-size: 1.2rem;
+               }
+               .app-icon{
+                    img{
+                         width: 40px;
+                         height: 40px;
+                         border-radius: 3px;
+                         object-fit: cover;
+                    }
+               }
+          }
+          .center{
+               height: calc(100vh - 140px);
+               display: flex;
+               flex-direction: column;
+               .search-wrapper{
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 2px solid wheat;
+                    .input-wrapper{
+                         height: 40px;
+                         border-radius: 0.3rem;
+                         width: 100%;
+                         margin: 0 1rem;
+                         display: flex;
+                         align-items: center;
+                         background-color: lightblue;
+                         gap: 10px;
+                         img{
+                              width: 20px;
+                              height: 20px;
+                              border-radius: 50%;
+                              object-fit: cover;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                         }
+                         input{
+                              height: 100%;
+                              width: 100%;
+                              border: none;
+                              outline: none;
+                              border-radius: 3px;
+                              font-size: 1.5rem;
+                              color: blue;
+                              background-color: rgb(248, 191, 85);
+                              padding: 5px;
+                              &::placeholder{
+                                   color: lightblue;
+                              }
+                         }
+                    }
+               }
+      .center-wrapper{
+          .items-wrapper{
+               display: flex;
+               flex-direction: column;
+
+               .contact-item,
+               .chat-item{
+                padding: 0.8rem 1rem;
+                border-bottom: 2px solid wheat;
+               cursor: pointer;    
+               }
+               .contact-item:hover,
+               .chat-item:hover,
+               .chat-item.active{
+                    background-color: blue;
+               }
+               .chat-item{
+                    display: flex;
+                    gap: 1rem;
+                  .chat-item-infos{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    
+                    .avatar-infos{
+                         display: flex;
+                         align-items: center;
+                         justify-content: space-between;
+
+                         .username{
+                              font-size: 1rem;
+                         }
+                         .timeline{
+                              font-size: 12px;
+                              color: lightblue;
+                         }
+                    }
+                  }    
+               }
+          }
+      }
+          }
+     }
+     .bottom{
+          height: 70px;
+          display: flex;
+          align-items: center;
+          border-top: 2px solid wheat;
+          padding: 0 1rem;
+          .logout-btn{
+               img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 3px;
+                    object-fit: cover;
+               }
+          }
+     }
+    
+}
